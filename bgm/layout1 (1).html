@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style1.css" media="all">
+		<style>
+				#mbg
+{width:60%;
+ margin-top:30px;
+ position:absolute;
+ top:23%;
+ border:0.2px solid blue;
+ border-radius:20px;
+ background-color: rgba(150,150,150,0.15);
+ margin-left:20%;
+ box-shadow: 5px 5px 20px black;
+ z-index:10;
+}	
+		</style>
+	</head>
+
+	<body class="body">
+		
+		
+		<div  id="mbg" style=" position:absolute; left:-20%; top:2%; border-radius:4px; border-top-right-radius:100px;border-bottom-right-radius:100px; width:auto; padding:0.75%; padding-right:3%;">
+		<a href="login.php"><input type="submit"  value="HOME" 	  style=" width:auto;  opacity:0.85; font-family:Trebuchet MS; font-size:16px; "></a>
+		<a href="login.php"><input type="submit"  value="BACK"	  style="width:auto; opacity:0.85;   font-family:Trebuchet MS; font-size:16px;"></a>
+		</div>
+		<form action="logout.php" method="post">		
+		<div  id="mbg" style=" position:absolute; right:0%; top:2%; height:7%;border-radius:4px; border-top-left-radius:100px;border-bottom-left-radius:100px; width:auto; padding-left:3%;padding-top:0.5%;">
+		
+		<input type="submit"  value="LOG OUT" style=" width:auto;  opacity:0.85;font-family:Trebuchet MS; font-size:16px;">
+		</form>
+		</div>
+	<div>
+		<?php
+		echo "<div class='form'  style='line-height:120%; position:absolute; right:2%; top:17%;'>
+				Welcome
+				<br/>";
+		echo  $_SESSION['name'];
+		echo	"</div>";
+		?>
+		</div>
+	
+		<div class="logo">
+			<a href="http://www.cdit.org" style="border:0px; opacity:0.4"><img src="cdit.jpg "/></a>
+		</div>
+		
+		
+		
+
+		<div class="footer">
+		Copyrights 2013 by C-DIT. All Rights Reserved
+		</div>		
+		
+		
+		</body>
+</html>
