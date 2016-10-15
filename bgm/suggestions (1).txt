@@ -1,1 +1,0 @@
-From next time on when working with php try using include() rigoroursly avoid redundancy
